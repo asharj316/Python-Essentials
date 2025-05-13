@@ -1,0 +1,22 @@
+File Handling:
+with open("file directory","operation") as f --> this closes the file automatically (with open).
+operations:
+"r" --> Read - Default value. Opens a file for reading, error if the file does not exist.
+"w" --> Write - Opens a file for writing, creates the file if it does not exist, Overwrites the data.
+"x" --> Create - Creates the specified file, returns an error if the file exists.
+"b" --> Binary - Binary mode (e.g. images).
+"a" --> Append mode. Opens the file for writing, appending to the end if it exists or creating it if it doesn't
+"w+" --> Write and read mode.
+read():
+By default the read() method returns the whole text, but you can also specify how many characters you want to return
+readlines(): 
+You can return one line by using the readline() method:
+
+OS MODULE :
+
+1)os.getcwd() --> to check current directory
+2)os.listdir("directory path") --> list all the files in the directory(folder)
+3)os.makedir("os.path.join("Directory Path","File Or Folder Name")) --> Creat files and Folders in given path
+4)os.path.join("source","Folder","File") --> can be used to make directory path for nested files or folders
+5)os.remove("directory path") --> Used to delete the files or folders
+6)os.rename("file source") --> Used to rename files

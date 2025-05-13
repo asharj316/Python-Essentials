@@ -1,0 +1,10 @@
+PyPDF2.PdfReader("file") --> used to read pdf files
+PyPDF2.PdfReader.pages  --> read pdf files in pages (pages are object)
+PyPDF2.extract_text() --> extract text from pdf file
+PyPDF2.PdfReader.page.image --> read images in pdf file
+PyPDF2.PdfReader.page.image.data --> used to get data of image in pdf file to save it and view it
+PyPDF2.PdfReader.is_encrypted/decrypted --> Returns value true and flase if file is ecrypted or decrypted respectively
+PyPDF2.PdfReader.decrypt('password') --> used to open password protected pdf file
+PyPDF2.PdfWriter.encrypt('password') --> used to make password protected pdf file
+PyPDF2.PdfWriter.append(PyPDF2.PdfReader("file")) --> adds a copy of all data from existing pdf to a new pdf in wiriting operation
+PyPDF2.PdfWriter.write("File Name") --> saves a pdf copy of data on which writing operation is done 
